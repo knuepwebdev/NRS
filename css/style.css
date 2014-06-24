@@ -6,23 +6,40 @@
 body {
   font-size: 16px;
   font-family: arial, sans-serif;
-  font-family: 'Raleway', sans-serif;
+  /*font-family: 'Raleway', sans-serif;*/
   margin: 0 auto;
+  background: #494949;
 }
 
-header, #logo, #phone, #tagline, nav, nav ul, nav ul li {
+#logo, #phone, #tagline, nav, nav ul, nav ul li, article, .left, .right,
+footer
+{
   width: 100%;
   float: left;
 }
 
+.clearfix {
+  clear: both;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
 /*HEADER*/
 header {
-  padding: 1em 3em;
+  max-width: 960px;
+  padding: 0.75em 1.25em;
+  margin: 0 auto;
+  background: #fff;
 }
 
 #logo {
   width: 75%;
-  float: left;
   font-size: 2.25em;
 }
 
@@ -31,10 +48,11 @@ header {
   text-align: right;
   font-family: Verdana;
   font-size: 1.25em;
-  padding-top: .75em;
+  padding-top: .5em;
 }
 
 #tagline {
+  font-family: 'Raleway', sans-serif;
   font-size: 1.25em;
 }
 
@@ -51,7 +69,7 @@ nav ul li {
   text-transform: uppercase;
 }
 
-nav ul li a {
+nav ul li a, header h1 a {
   text-decoration: none;
   color: #111;
 }
@@ -60,5 +78,46 @@ nav ul li a:hover {
   color: #494949;
 }
 /*BODY*/
+#container {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+figure {
+
+}
+
+figcaption {
+  padding: .5em 3em 1em 2em;
+}
+
+#x_ray_machine {
+  width: 50%;
+  float: right;
+  padding: 2em 3em 2em 2em;
+}
+
+.left {
+  width: 50%;
+  float: left;
+  padding: 1.75em 5em .25em 1em;
+}
+
+.right {
+  width: 50%;
+  float: left;
+  padding: .5em 5em .25em 1em;
+}
+
+section h2 {
+  font-size: 1.25em;
+  padding: .25em 0;
+}
 
 /*FOOTER*/
+footer {
+  border-top: 2px solid #111;
+  padding: .25em 1em;
+  background: #fff;
+}
