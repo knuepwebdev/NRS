@@ -93,21 +93,25 @@ figcaption {
 }
 
 #x_ray_machine {
-  width: 50%;
+  width: 100%;
   float: right;
-  padding: 2em 3em 2em 2em;
+  /*padding: 2em 3em 2em 2em;*/
 }
 
-.left {
+#left_column {
   width: 50%;
   float: left;
-  padding: 1.75em 5em .25em 1em;
+  padding: 0.5em 0.5em .5em 1.25em;
 }
 
-.right {
+#right_column {
   width: 50%;
   float: left;
-  padding: .5em 5em .25em 1em;
+  padding: 1.25em 1.25em 1.25em 0.5em;
+}
+
+section {
+  padding: 0.5em 0;
 }
 
 section h2 {
