@@ -18,10 +18,6 @@ footer
   float: left;
 }
 
-.clearfix {
-  clear: both;
-}
-
 .clearfix:after {
   content: ".";
   display: block;
@@ -34,37 +30,46 @@ footer
 header {
   max-width: 960px;
   padding: 0.75em 1.25em;
-  margin: 0 auto;
+  margin: 1.5em auto 0 auto;
   background: #fff;
+  border-bottom: 1px solid #111;
+}
+#hdr_left {
+  width: 75%;
+  float: left;
+}
+#hdr_right {
+  width: 25%;
+  float: left;
 }
 
 #logo {
-  width: 75%;
-  font-size: 2.25em;
+  font-family: Georgia;
+  font-size: 1.75em;
 }
 
 #phone {
-  width: 25%;
   text-align: right;
   font-family: Verdana;
-  font-size: 1.25em;
-  padding-top: .5em;
+  font-size: 1.1em;
+  padding-top: .25em;
 }
 
 #tagline {
   font-family: 'Raleway', sans-serif;
-  font-size: 1.25em;
+  font-size: 1em;
 }
 
 nav ul {
-  padding-top: 1em;
+  width: 50%;
+  margin: 1em 28.75em 0 0;
   list-style: none;
 }
 
 nav ul li {
-  width: 25%;
+  width: 33.3333%;
   float: left;
-  font-size: 1.25em;
+  font-size: 1.1em;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -84,13 +89,6 @@ nav ul li a:hover {
   background: #fff;
 }
 
-figure {
-
-}
-
-figcaption {
-}
-
 #x_ray_machine, #helmut {
   width: 100%;
   float: right;
@@ -105,7 +103,7 @@ figcaption {
 
 #right_column {
   width: 50%;
-  float: left;
+  float: right;
   padding: 1.25em 1.25em 1.25em 0.5em;
 }
 
@@ -124,7 +122,38 @@ section h2 {
 
 /*FOOTER*/
 footer {
-  border-top: 2px solid #111;
-  padding: .25em 1em;
+  border-top: 1px solid #111;
+  padding: .5em 1em;
   background: #fff;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 685px) {
+  header {
+    margin: 0 auto;
+  }
+
+  #hdr_left, #hdr_right {
+    width: 100%;
+    float: none;
+  }
+  #logo {
+    width: 100%;
+  }
+  #phone {
+    text-align: left;
+  }
+  nav ul li {
+    width: 100%;
+    padding: .25em 0;
+  }
+  #right_column {
+    width: 100%;
+    padding: 1.25em 1.25em 0 1.25em;
+  }
+  #left_column {
+    width: 100%;
+    padding: 0 1.25em;
+  }
+
 }
